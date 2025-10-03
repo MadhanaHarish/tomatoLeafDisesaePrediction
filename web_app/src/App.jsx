@@ -22,7 +22,7 @@ function Detect() {
             const formData = new FormData();
             formData.append("image", selectedFile);
 
-            const response = await fetch("http://127.0.0.1:5000/detect", {
+            const response = await fetch("https://tomatoleafdisesaeprediction.onrender.com/detect", {
                 method: "POST",
                 body: formData,
             });
